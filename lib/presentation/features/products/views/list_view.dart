@@ -26,8 +26,7 @@ class ProductsListView extends StatelessWidget {
               );
             } else {
               return Padding(
-                padding:
-                  EdgeInsets.symmetric(horizontal: AppSizes.sidePadding),
+                padding:EdgeInsets.symmetric(horizontal: AppSizes.sidePadding),
                 child: state.data.products[index].getListView(
                     context: context,
                     showProductInfo: () {

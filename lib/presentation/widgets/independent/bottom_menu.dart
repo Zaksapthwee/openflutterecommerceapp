@@ -47,8 +47,8 @@ class OpenFlutterBottomMenu extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(15.0),
-          topRight: Radius.circular(15.0),
+//          topLeft: Radius.circular(15.0),
+//          topRight: Radius.circular(15.0),
         ),
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,

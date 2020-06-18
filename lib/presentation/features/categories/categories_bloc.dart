@@ -61,6 +61,7 @@ class CategoryBloc extends Bloc<CategoryEvent, CategoryState> {
       }
     }
   }
+
   Future<List<ProductCategory>> _getCategoriesByFilter(int categoryId) async{
     final categoriesData = await findCategoriesByFilterUseCase.execute(
       CategoriesByFilterParams(

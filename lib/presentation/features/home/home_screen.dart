@@ -21,18 +21,18 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: OpenFlutterScaffold(
-      background: null,
-      title: null,
-      body: BlocProvider<HomeBloc>(
-          create: (context) {
-            return HomeBloc(
-                productRepository:
+          background: null,
+          title: null,
+          body: BlocProvider<HomeBloc>(
+              create: (context) {
+                return HomeBloc(
+                    productRepository:
                     RepositoryProvider.of<ProductRepository>(context))
-              ..add(HomeLoadEvent());
-          },
-          child: HomeWrapper()),
-      bottomMenuIndex: 0,
-    ));
+                  ..add(HomeLoadEvent());
+              },
+              child: HomeWrapper()),
+          bottomMenuIndex: 0,
+        ));
   }
 }
 

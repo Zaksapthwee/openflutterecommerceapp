@@ -24,7 +24,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       if (state is HomeInitialState) {
         yield HomeLoadedState(
             salesProducts: await productRepository.getProducts(categoryId: 1),
-            newProducts: await productRepository.getProducts(categoryId: 2));
+            newProducts: await productRepository.getProducts(categoryId: 2)
+            );
       } else if (state is HomeLoadedState) {
         yield state;
       }
